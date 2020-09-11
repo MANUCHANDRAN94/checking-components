@@ -1,0 +1,481 @@
+:root {
+  --main-bg-color: rgba(102, 205, 170, 0.2);
+  --more-green: rgba(0, 220, 154, 0.9);
+  --font-color: rgba(0, 0, 0, 0.6);
+  --font-color-moredark: rgba(0, 0, 0, 0.8);
+  --font-brown-shade: rgba(117, 109, 129, 0.7);
+}
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--font-color);
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1vw;
+}
+
+/* Header START */
+header {
+  width: 100%;
+}
+/* utility topmost navbar START */
+header .utility-nav {
+  background: var(--main-bg-color);
+  padding: 0.45em;
+}
+header .utility-nav .container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+}
+header .utility-nav .container a {
+  text-decoration: none;
+  font-size: 0.95em;
+  font-weight: bold;
+  color: var(--font-color);
+}
+header .utility-nav .container .phone-img {
+  width: 0.7em;
+  margin-right: 0.6em;
+  margin-bottom: -0.3em;
+}
+header .utility-nav .container a:last-child img {
+  width: 0.7em;
+  margin: 0 0 0.1em 0.3em;
+}
+header .utility-nav .container a span {
+  font-weight: lighter;
+}
+header .vertical {
+  align-self: stretch;
+  margin: -0.1em 0.7em -0.1em 0.7em;
+  border-left: 2px solid rgba(161, 159, 159, 0.2);
+}
+/* utility navbar END */
+
+/* navbar START */
+header .navbar {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2.1em 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+/* Logo */
+header .navbar .logo {
+  width: 30%;
+  align-self: center;
+  margin-top: 0.2em;
+}
+
+header .navbar .logo img {
+  width: 54%;
+}
+/* List */
+header .navbar .list {
+  font-weight: 600;
+  width: 70%;
+  text-align: end;
+}
+header .navbar .list a {
+  margin: 0 0 0 2em;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+header .navbar strong {
+  font-weight: bolder;
+}
+header input {
+  width: 16vw;
+  height: 3vw;
+  padding: 1em;
+  border: none;
+  opacity: 75%;
+  border-radius: 10%;
+  background: rgba(220, 220, 220, 0.5);
+  background-image: url(/public/search.svg);
+  background-repeat: no-repeat;
+  background-size: 7%;
+  background-position: 1em;
+  text-indent: 1.4em;
+}
+header input::placeholder {
+  font-size: 1vw;
+}
+header input:focus {
+  background-image: none;
+}
+/* navbar END */
+/* Header END */
+
+/* main START */
+/* MAIN SECTION START */
+#main-content {
+  width: 80%;
+  height: 40vw;
+  margin: 0.7em auto 0.4em;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+#main-content .left-section {
+  width: 45%;
+  align-self: stretch;
+}
+#main-content .left-section h1 {
+  margin: 2.5em 0 0 0;
+  font-size: 2.7em;
+  font-weight: lighter;
+  color: var(--font-color-moredark);
+}
+#main-content .left-section h1 strong {
+  position: relative;
+  color: var(--font-color-moredark);
+}
+#main-content .left-section h1 strong::before {
+  content: "";
+  position: absolute;
+  bottom: 0.1em;
+  height: 0.27em;
+  width: 2.3em;
+  background-color: rgba(102, 240, 170, 0.9);
+  opacity: 0.7;
+  z-index: -1;
+}
+#main-content .left-section h6 {
+  margin: 1.4em 0 2.5em 0;
+  font-size: 1.1em;
+  font-weight: lighter;
+  color: var(--font-brown-shade);
+  line-height: 2em;
+}
+#main-content .left-section h6 strong {
+  font-size: 1.1em;
+  opacity: 0.9;
+}
+#main-content .left-section button {
+  padding: 0.9em 1.2em;
+  width: 42%;
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #fff;
+  background: var(--more-green);
+  border: 1px solid var(--more-green);
+  border-radius: 5%;
+}
+
+#main-content .right-section img {
+  width: 47%;
+  height: 36vw;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+/* MAIN SECTION END */
+/* Regulated and entrusted by  START */
+.trusted-by {
+  background: var(--main-bg-color);
+}
+.trusted-by .container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+}
+.trusted-by .container .left-section {
+  width: 50%;
+  margin: 1em 0;
+}
+.trusted-by .container .left-section h2 {
+  font-size: 2.2em;
+  font-weight: 600;
+  color: var(--font-color-moredark);
+}
+.trusted-by .container .left-section p {
+  margin-top: 0.3em;
+  color: var(--font-brown-shade);
+  font-size: 1.05em;
+  line-height: 1.8em;
+}
+.trusted-by .container .right-section {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.trusted-by .container .right-section figure {
+  padding: 0.7em;
+  margin: 0 0 0 3em;
+  border: 1px solid var(--main-bg-color);
+  color: var(--font-brown-shade);
+  font-size: 0.9em;
+  font-weight: 600;
+}
+.trusted-by .container .right-section figure img {
+  margin-left: 0.7em;
+  padding: 0.5em 0;
+  width: 4.5em;
+}
+/* Regulated and entrusted by  END */
+/* Learn with fund guru section START */
+#Learn-with-fund-guru {
+  width: 80%;
+  height: 55vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+#Learn-with-fund-guru .left-section {
+  width: 42%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#Learn-with-fund-guru .left-section img {
+  width: 27vw;
+}
+#Learn-with-fund-guru .right-section {
+  width: 58%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+}
+#Learn-with-fund-guru .right-section .heading h6 {
+  padding-left: 8em;
+  font-size: 1.3em;
+  font-weight: 500;
+  color: var(--font-color-moredark);
+}
+#Learn-with-fund-guru .right-section .heading h2 {
+  padding-left: 3.8em;
+  font-size: 2.7em;
+  margin-top: -0.8em;
+}
+#Learn-with-fund-guru .right-section .items {
+  display: flex;
+  justify-content: flex-start;
+  color: var(--font-color-moredark);
+  font-size: 1.1em;
+  font-weight: 500;
+  margin: 1.3em 0;
+  padding-left: 2.3em;
+}
+#Learn-with-fund-guru .right-section .items:first-child {
+  margin-top: 0;
+}
+#Learn-with-fund-guru .right-section .items img {
+  margin-right: 2em;
+  width: 1.3em;
+}
+#Learn-with-fund-guru .right-section .btns {
+  width: 64%;
+  display: flex;
+  justify-content: center;
+}
+#Learn-with-fund-guru .right-section .btn button {
+  font-size: 1.2em;
+  font-weight: 500;
+  width: 9.7em;
+  height: 3.5em;
+  border: none;
+  border-radius: 5%;
+}
+#Learn-with-fund-guru .right-section .btn:first-child button {
+  background: var(--more-green);
+  color: white;
+  margin-left: 5em;
+}
+#Learn-with-fund-guru .right-section .btn:last-child button {
+  background: white;
+  color: var(--more-green);
+  width: 10em;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#Learn-with-fund-guru .right-section .btn:last-child button img {
+  width: 2em;
+}
+/* Learn with fund guru section END */
+
+/* Ask the EXpert START */
+#ask-expert {
+  width: 100%;
+  height: 95vw;
+  background: rgb(251, 251, 251);
+  background: linear-gradient(
+    0deg,
+    rgba(251, 251, 251, 1) 55%,
+    rgba(226, 255, 242, 1) 100%
+  );
+}
+#ask-expert .container {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#ask-expert .upper-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#ask-expert .upper-div .left-section {
+  display: flex;
+  flex-flow: column wrap;
+  width: 48%;
+  margin-bottom: 8em;
+}
+#ask-expert .upper-div .left-section .cards {
+  display: flex;
+  justify-content: space-between;
+}
+#ask-expert .upper-div .left-section .heading {
+  margin-bottom: 2em;
+}
+#ask-expert .upper-div .left-section .heading h2 {
+  font-size: 2.8em;
+  font-weight: 500;
+  color: var(--font-color-moredark);
+}
+#ask-expert .upper-div .left-section .heading p {
+  font-size: 1.2em;
+}
+#ask-expert .upper-div .left-section .card img {
+  padding: 1em;
+  width: 3.7em;
+  background: var(--main-bg-color);
+}
+#ask-expert .upper-div .left-section .card:first-child img {
+  padding-bottom: 0.5em;
+}
+#ask-expert .upper-div .left-section .card h4 {
+  font-size: 1.6em;
+  color: var(--font-color-moredark);
+}
+#ask-expert .upper-div .left-section .card p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+  color: var(--font-brown-shade);
+}
+#ask-expert .upper-div .left-section .card button {
+  width: 80%;
+  padding: 0.9em;
+  font-size: 1.2em;
+  font-weight: 600;
+  background: var(--more-green);
+  color: #fff;
+  border-radius: 5%;
+  border: 1px solid var(--more-green);
+}
+#ask-expert .upper-div .left-section .card:first-child button {
+  margin-top: 1.3em;
+}
+#ask-expert .upper-div .right-section {
+  width: 47%;
+}
+#ask-expert .upper-div .right-section div img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 5em;
+}
+#ask-expert .lower-div {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#ask-expert .lower-div h3 {
+  font-size: 2em;
+  color: var(--font-color-moredark);
+}
+#ask-expert .lower-div p {
+  font-size: 1.2em;
+  line-height: 1.7em;
+  color: var(--font-brown-shade);
+}
+#ask-expert .lower-div .app h5 {
+  font-size: 1.5em;
+  color: var(--font-color-moredark);
+}
+#ask-expert .lower-div .app img {
+  width: 11em;
+}
+#ask-expert .lower-div .chat {
+  position: relative;
+}
+#ask-expert .lower-div .chat img {
+  position: absolute;
+  top: -5vw;
+  right: -40vw;
+  width: 6em;
+}
+/* Ask the EXpert END */
+/* main END */
+
+/* footer START */
+footer .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80%;
+  height: 28vw;
+  margin: 0 auto;
+}
+footer .top-section {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .top-section .left-section img {
+  width: 20vw;
+}
+footer .top-section .right-section {
+  width: 45vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer .top-section .right-section .card {
+  width: 14vw;
+  text-align: left;
+}
+footer .top-section .right-section h5 {
+  font-size: 1.07em;
+  color: var(--font-color-moredark);
+}
+footer .top-section .right-section li {
+  list-style: none;
+  margin: 1em 0 0 -40px;
+  font-weight: 600;
+  color: var(--font-brown-shade);
+}
+footer .top-section .right-section img {
+  width: 3em;
+  padding-right: 1em;
+}
+
+footer .bottom-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 0;
+  background: rgba(251, 251, 251, 2);
+  border-top: 1px solid #f3f3ed;
+}
+footer .bottom-section img{
+  padding-left: 2em;
+  height: 1vw;
+}
+
+/* footer END */
